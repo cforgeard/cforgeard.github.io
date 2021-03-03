@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Clément FORGEARD - Personal website</title>
+    <link rel="stylesheet" href="./assets/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+        #card-container {
+            margin: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #card-container>* {
+            margin-bottom: 16px;
+        }
+
+        .card {
+            width: 800px;
+            min-width: 60%;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-body {
+            width: 800px;
+            min-width: 60%
+        }
+
+        .empty-image {
+            background: lightgray;
+            border-radius: 24px;
+        }
+
+        .second-subtitle {
+            margin-top: -1.25rem;
+        }
+
+        #external-links-container {
+            display: flex; align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero is-link">
+        <div class="hero-body">
+            <p class="subtitle">
+                Hi, my name is
+            </p>
+            <p class="title is-1">
+                Clément FORGEARD,
+            </p>
+            <p class="subtitle is-1">
+                A full stack engineer.
+            </p>
+
+            <p class="subtitle is-3" style="font-weight: lighter;">
+                I'm a full stack engineer based in Lannion 🇫🇷. Skilled in Angular, NestJS and much more.
+            </p>
+
+            <p class="subtitle" id="external-links-container">
+                You can find me on &nbsp;
+                <a class="button is-dark is-rounded" href="https://www.linkedin.com/in/cforgeard">LinkedIn</a>&nbsp;
+                <a class="button is-dark is-rounded" href="https://github.com/cforgeard">GitHub</a>&nbsp;
+                <a class="button is-dark is-rounded" href="mailto:clement_forgeard@outlook.fr">Email</a>
+            </p>
+
+            <br />
+            <!--<button class="button is-black is-large">Get resume</button>-->
+        </div>
+    </header>
+
+    <section id="card-container">
+        <br />
+        <p class="subtitle is-2">
+            Public projects
+        </p>
+
+        <!-- CyberDoc -->
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="./assets/cyberdoc-icon.png"
+                                alt="App icon">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">CyberDoc</p>
+                        <p href="#" class="subtitle is-6">
+                            <a href="https://github.com/cforgeard/CyberDoc">
+                                <img src="./assets/github-icon.png" width="16" height="16"
+                                    alt="github">
+                                cforgeard/CyberDoc
+                            </a>
+                        </p>
+                        <p class="subtitle is-6 second-subtitle">NestJS - Angular - MongoDB</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    An open source cloud file storage server (similar to Google Drive) with built-in encryption.
+                    <br /><br />
+                    <a href="https://www.youtube.com/watch?v=sZweBaCeu-k">Demo (YouTube Video)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AndroidVoiceTranslator -->
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="./assets/voice-translator-icon.png"
+                                alt="App icon">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">AndroidVoiceTranslator</p>
+                        <p href="#" class="subtitle is-6">
+                            <a href="https://github.com/cforgeard/AndroidVoiceTranslator">
+                                <img src="./assets/github-icon.png" width="16" height="16"
+                                    alt="github">
+                                cforgeard/AndroidVoiceTranslator
+                            </a>
+                        </p>
+                        <p class="subtitle is-6 second-subtitle">Kotlin</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    An Android application that allows you to translate an audio message in one language into another
+                    language.
+                </div>
+            </div>
+        </div>
+
+        <!-- RoadSafetyDataAPI -->
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48 empty-image"></figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">RoadSafetyDataAPI</p>
+                        <p href="#" class="subtitle is-6">
+                            <a href="https://github.com/cforgeard/RoadSafetyDataAPI">
+                                <img src="./assets/github-icon.png" width="16" height="16"
+                                    alt="github">
+                                cforgeard/RoadSafetyDataAPI
+                            </a>
+                        </p>
+                        <p class="subtitle is-6 second-subtitle">Kotlin - Spring</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    An API who allow you to access various data about road safety (from a <a
+                        href="https://www.nuitdelinfo.com/nuitinfo/defis2017:archives#defi125">programming contest</a>,
+                    team Code & Furious)
+                </div>
+            </div>
+        </div>
+
+        <!-- DrivingOsmGame -->
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48 empty-image"></figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">DrivingOsmGame</p>
+                        <p href="#" class="subtitle is-6">
+                            <a href="https://github.com/cforgeard/DrivingOsmGame">
+                                <img src="./assets/github-icon.png" width="16" height="16"
+                                    alt="github">
+                                cforgeard/DrivingOsmGame
+                            </a>
+                        </p>
+                        <p class="subtitle is-6 second-subtitle">TypeScript</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    Prototype of driving simulation with OpenStreetMap
+                    <br /><br />
+                    <a href="https://www.youtube.com/watch?v=O2W8V2R5EaQ">Demo (YouTube Video)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Website by <a href="https://github.com/cforgeard">Clément FORGEARD</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
